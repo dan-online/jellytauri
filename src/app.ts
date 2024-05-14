@@ -1,14 +1,16 @@
 import Spinner from "~icons/svg-spinners/ring-resize";
 
-import { invoke } from "@tauri-apps/api";
-import {
-	type UpdateResult,
-	checkUpdate,
-	installUpdate,
-} from "@tauri-apps/api/updater";
+import { invoke } from "@tauri-apps/api/core";
+import { type Update, check } from "@tauri-apps/plugin-updater";
 
 import "virtual:uno.css";
 import "@unocss/reset/tailwind.css";
+
+declare global {
+	interface Window {
+		__TAURI__: unknown;
+	}
+}
 
 const inTauri = window.__TAURI__;
 
@@ -51,17 +53,19 @@ const updateCheck = async () => {
 		return;
 	}
 
-	const update: UpdateResult | null = await checkUpdate().catch((e) => {
+	const update: Update | null = await check().catch((e) => {
 		console.error(e);
 		return null;
 	});
 
-	if (update?.shouldUpdate) {
+	if (update?.available) {
+		console.log("Update available", update);
+
 		const updateEl = document.querySelector(".update")!;
 
 		updateEl.classList.remove("hidden");
 
-		await installUpdate();
+		await update.downloadAndInstall();
 	}
 };
 
