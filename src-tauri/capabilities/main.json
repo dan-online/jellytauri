@@ -10,6 +10,7 @@
     "store:allow-load",
     "updater:default",
     "updater:allow-check",
-    "process:allow-restart"
+    "process:allow-restart",
+    "window:allow-set-fullscreen"
   ]
 }
