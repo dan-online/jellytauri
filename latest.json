@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "notes": "See the assets to download this version and install.",
+  "pub_date": "2024-05-14T13:59:49.864Z",
+  "platforms": {
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTcWI0eUlFS3crV0dBaUphYkM0QWFaZ1JRQjNuS1Z1S25JOXowanIvbXNoUHhHbDd6SFo3QTVvY3Y1eDRVd0tGUGFDU1p4MTFweGYrV2FuOE9KREJlUjVDVk9HQVRmb2cwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzE1Njk1MDUwCWZpbGU6SmVsbHlUYXVyaS5hcHAudGFyLmd6ClNVK0xDZ2d4MzNlZmYvN3VERHNxWndXcWdjaVJkKzcxMUdBYlU5RnpaSm0reGgwL0JRNGVyV0tzeCsvZFh3eTJEdjVnNk81dE5lRnU4R01vM0JiUUJBPT0K",
+      "url": "https://github.com/dan-online/jellytauri/releases/download/v1.0.0/JellyTauri_aarch64.app.tar.gz"
+    },
+    "darwin-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTcWI0eUlFS3crV0NGNVcvVGZ0NFVoYnZ2ZElubGg5N2I3RmtQWlA4SlBudWJ0RTlQYkR6eVdyd0ovdFpneDlaNzVSNU9kNVQ5d2dEV3FhZHZlZmJjdEN3d2NkSkhiMFE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzE1Njk1MDk5CWZpbGU6SmVsbHlUYXVyaS5hcHAudGFyLmd6Ck5FbTNBTjI1VW9Hd29ia2RiUU1qMGkyYTd4YkJLR25zVmRQbk9WZ3pORlpqTEZMSlpiQitjVVZ5OW1aYVFFUlc5ZTcxT0lhVk43RTQyOExOaC9ReUF3PT0K",
+      "url": "https://github.com/dan-online/jellytauri/releases/download/v1.0.0/JellyTauri_x64.app.tar.gz"
+    },
+    "linux-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTcWI0eUlFS3crV0RWZGxmVFBtTm5CQ1pYbEpVaG54NW9nTWoxTnFFZHB2emNyaHZlY05WTzhXMTRVS0JabUNxVXVaRGdrcEQ0QTBaT3RSYUQwU282TjhOQWF4ZFBrSFFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzE1Njk1MTY5CWZpbGU6amVsbHktdGF1cmlfMS4wLjBfYW1kNjQuQXBwSW1hZ2UudGFyLmd6ClZOcUV4SWJsTFFmV093aGVEQjFYZnhpQUF3dXhUZ3YwdmdyT3JoNW0wam1MdjByU1phNW1HR2MxZlBTRkhDV3ltdkhqY2d3WklKUVhWQUYreVVZeEJRPT0K",
+      "url": "https://github.com/dan-online/jellytauri/releases/download/v1.0.0/jelly-tauri_1.0.0_amd64.AppImage.tar.gz"
+    },
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTcWI0eUlFS3crV0xpdlU3c3hqTGdERVZldzZGemxIa1dtU01ycWViRSt4Z0lsQ0lFaHMvMjNXMGtsQnJDdis3ZlBPdHVjcUY0S2M0Q25KOWpkTTRmRXVkRzBGZzRmSXdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzE1Njk1MTg0CWZpbGU6SmVsbHlUYXVyaV8xLjAuMF94NjRfZW4tVVMubXNpLnppcAp5Vm9OeTIxenZtcUR4eWVDZHRzalg0Zk1tMjVsQ1o4YWRhd2dWOTFBQUVRVnJZWHU1M09BdlhPUDQ5S3hSY2lTZFN4WEpSNEZnTWVERUkzYUNBRUNEUT09Cg==",
+      "url": "https://github.com/dan-online/jellytauri/releases/download/v1.0.0/JellyTauri_1.0.0_x64_en-US.msi.zip"
+    }
+  }
+}
