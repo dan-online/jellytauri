@@ -43,7 +43,8 @@
     "windows": [
       {
         "title": "JellyTauri",
-        "maximized": true
+        "label": "main",
+        "fullscreen": true
       }
     ]
   }

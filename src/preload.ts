@@ -1,4 +1,4 @@
-import { getCurrent } from "@tauri-apps/api/window";
+// import { getCurrent } from "@tauri-apps/api/window";
 
 console.log("preload.js loaded");
 
@@ -21,16 +21,16 @@ const i = setInterval(() => {
 		}
 	}
 
-	const fullscreenButton = document.querySelector(".btnFullscreen");
+	// const fullscreenButton = document.querySelector(".btnFullscreen");
 
-	if (fullscreenButton) {
-		fullscreenButton.addEventListener("click", async (e) => {
-			e.preventDefault();
-			const win = getCurrent();
+	// if (fullscreenButton) {
+	// 	fullscreenButton.addEventListener("click", async (e) => {
+	// 		e.preventDefault();
+	// 		const win = getCurrent();
 
-			await win.setFullscreen(!win.isFullscreen());
-		});
-	}
+	// 		await win.setFullscreen(!win.isFullscreen());
+	// 	});
+	// }
 }, 500);
 
 window.addEventListener("beforeunload", () => {
