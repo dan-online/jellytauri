@@ -57,3 +57,25 @@ jobs:
           prerelease: false
           args: ${{ matrix.settings.args }}
           includeUpdaterJson: true
+
+  update-latest:
+    needs: publish-tauri
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Download latest.json
+        run: |
+          curl -s -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/dan-online/jellytauri/releases/latest | jq -r '.assets[] | select(.name == "latest.json") | .browser_download_url' | xargs curl -s -L -o /tmp/latest.json
+      - name: Update latest.json
+        run: |
+          git config --global user.email "dan@dancodes.online"
+          git config --global user.name "DanCodes"
+
+          mv /tmp/latest.json ./latest.json
+
+          git add latest.json
+
+          git commit -m "chore(release): update latest.json"
+          git push
