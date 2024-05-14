@@ -31,6 +31,6 @@ jobs:
         uses: josh-development/.github/setup-node@main
 
       - name: Build
-        run: yarn tauri build
+        run: yarn tauri build --no-bundle
         env:
           TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
