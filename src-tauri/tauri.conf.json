@@ -32,7 +32,8 @@
     "windows": [
       {
         "title": "JellyTauri",
-        "maximized": true
+        "maximized": true,
+        "fullscreen": true
       }
     ],
     "withGlobalTauri": true
