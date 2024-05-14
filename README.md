@@ -33,7 +33,7 @@ Head to the [releases](https://github.com/dan-online/jellytauri/releases) page t
 
 ## License
 
-Distributed under the MIT License. See [`LICENSE`](LICENSE) for more information.
+Distributed under the MIT License. See [`LICENSE`](https://dancodes.mit-license.org/2024) for more information.
 
 ## Contact
 
