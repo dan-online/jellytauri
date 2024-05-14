@@ -1,29 +1,32 @@
 {
   "name": "jellytauri",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "workspaces": [
     "jellyfin-web"
   ],
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev:server": "vite",
+    "dev:preload": "tsup",
+    "dev": "concurrently --raw \"yarn dev:server\" \"yarn dev:preload --watch\"",
+    "build:server": "vite build",
+    "build:preload": "tsup",
+    "build": "yarn build:server && yarn build:preload",
     "tauri": "tauri"
   },
   "dependencies": {
     "@iconify/json": "^2.2.210",
-    "@tauri-apps/api": "^2.0.0-beta.11",
-    "@tauri-apps/plugin-process": "^2.0.0-beta.3",
-    "@tauri-apps/plugin-store": "^2.0.0-beta.3",
-    "@tauri-apps/plugin-updater": "^2.0.0-beta.3",
     "@unocss/reset": "^0.60.2",
     "unplugin-auto-import": "^0.17.6",
     "unplugin-icons": "^0.19.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.7.3",
-    "@tauri-apps/cli": "^2.0.0-beta.17",
+    "@tauri-apps/api": "^1.5.5",
+    "@tauri-apps/cli": "^1.5.14",
+    "concurrently": "^8.2.2",
+    "tsup": "^8.0.2",
     "typescript": "^5.4.5",
     "unocss": "^0.60.2",
     "vite": "^5.2.11"

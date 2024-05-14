@@ -1,20 +1,14 @@
 import Spinner from "~icons/svg-spinners/ring-resize";
 
-import { Store } from "@tauri-apps/plugin-store";
-import { invoke } from "@tauri-apps/api/core";
-import { type Update, check } from "@tauri-apps/plugin-updater";
-import { relaunch } from "@tauri-apps/plugin-process";
+import { invoke } from "@tauri-apps/api";
+import {
+	type UpdateResult,
+	checkUpdate,
+	installUpdate,
+} from "@tauri-apps/api/updater";
 
 import "virtual:uno.css";
 import "@unocss/reset/tailwind.css";
-
-const store = new Store("store.bin");
-
-declare global {
-	interface Window {
-		__TAURI__: unknown;
-	}
-}
 
 const inTauri = window.__TAURI__;
 
@@ -31,20 +25,11 @@ const resolveJellyfin = async (url: string) => {
 };
 
 const setJellyfinUrl = async (url: string) => {
-	if (!inTauri) {
-		return localStorage.setItem("jellyfin_url", url);
-	}
-
-	await store.set("jellyfin_url", url);
-	await store.save();
+	return localStorage.setItem("jellyfin_url", url);
 };
 
 const getJellyfinUrl = async () => {
-	if (!inTauri) {
-		return localStorage.getItem("jellyfin_url") as string | undefined;
-	}
-
-	return store.get<string>("jellyfin_url");
+	return localStorage.getItem("jellyfin_url") as string | undefined;
 };
 
 const setError = (message: string) => {
@@ -66,39 +51,17 @@ const updateCheck = async () => {
 		return;
 	}
 
-	const update: Update | null = await check().catch((e) => {
+	const update: UpdateResult | null = await checkUpdate().catch((e) => {
 		console.error(e);
 		return null;
 	});
 
-	if (update?.available) {
-		console.log("Update available", update);
-
+	if (update?.shouldUpdate) {
 		const updateEl = document.querySelector(".update")!;
 
 		updateEl.classList.remove("hidden");
 
-		const progress: HTMLDivElement = updateEl.querySelector(".progress")!;
-
-		let size = 0;
-
-		await update.downloadAndInstall((p) => {
-			switch (p.event) {
-				case "Started":
-					size = p.data.contentLength || 0;
-					break;
-				case "Progress":
-					progress.style.width = `${(p.data.chunkLength / size) * 100}%`;
-					break;
-				case "Finished":
-					progress.style.width = "100%";
-					break;
-			}
-		});
-
-		progress.style.display = "none";
-
-		await relaunch();
+		await installUpdate();
 	}
 };
 

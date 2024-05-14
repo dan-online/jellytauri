@@ -27,33 +27,29 @@ async fn resolve_jellyfin(url: String) -> Result<JellyfinInfoResponse, String> {
         .map_err(|e| e.to_string())?;
 
     let res = client.get(&format!("{url}System/Info/Public")).send().await;
+
     match res {
         Ok(response) => {
-            let jellyfin_info: JellyfinInfoResponse =
-                response.json().await.map_err(|e| e.to_string())?;
+            let jellyfin_info: JellyfinInfoResponse = response.json().await.map_err(|e| e.to_string())?;
+
             Ok(jellyfin_info)
         }
-        Err(e) => Err(e.to_string()),
+        Err(e) => Err("Unable to connect to Jellyfin server".to_string()),
     }
 }
 
 fn inject_script_plugin<R: Runtime>() -> TauriPlugin<R> {
     tauri::plugin::Builder::new("inject_script")
         .on_page_load(|webview, _| {
-            webview.eval(include_str!("../../src/preload.js")).unwrap();
+            webview
+                .eval(include_str!("../../dist/preload.cjs"))
+                .unwrap();
         })
         .build()
 }
 
 fn main() {
     tauri::Builder::default()
-        .setup(|app| {
-            app.handle()
-                .plugin(tauri_plugin_updater::Builder::new().build())?;
-            Ok(())
-        })
-        .plugin(tauri_plugin_process::init())
-        .plugin(tauri_plugin_store::Builder::new().build())
         .plugin(inject_script_plugin())
         .invoke_handler(tauri::generate_handler![resolve_jellyfin])
         .run(tauri::generate_context!())
