@@ -2,8 +2,8 @@ name: Continuous Delivery
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - "v*.*.*"
 
 jobs:
   publish-tauri:
@@ -47,7 +47,7 @@ jobs:
         with:
           workspaces: "./src-tauri -> target"
 
-      - uses: tauri-apps/tauri-action@v0
+      - uses: tauri-apps/tauri-action@v0.5.3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
