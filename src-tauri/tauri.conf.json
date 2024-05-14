@@ -7,8 +7,7 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "jellytauri",
-    "version": "0.1.0"
+    "productName": "jellytauri"
   },
   "tauri": {
     "allowlist": {
