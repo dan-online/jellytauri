@@ -30,11 +30,12 @@ async fn resolve_jellyfin(url: String) -> Result<JellyfinInfoResponse, String> {
 
     match res {
         Ok(response) => {
-            let jellyfin_info: JellyfinInfoResponse = response.json().await.map_err(|e| e.to_string())?;
+            let jellyfin_info: JellyfinInfoResponse =
+                response.json().await.map_err(|e| e.to_string())?;
 
             Ok(jellyfin_info)
         }
-        Err(e) => Err("Unable to connect to Jellyfin server".to_string()),
+        Err(_) => Err("Unable to connect to Jellyfin server".to_string()),
     }
 }
 
