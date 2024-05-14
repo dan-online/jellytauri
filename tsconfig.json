@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "module": "CommonJS",
+        "lib": ["ESNext", "DOM"],
+        "types": ["unplugin-icons/types/raw"]
+    }
+}

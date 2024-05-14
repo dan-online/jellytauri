@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      html,
+      body {
+        font-family: "Quicksand", sans-serif;
+        background-color: #101010;
+      }
+    </style>
+
+    <script type="module" src="src/app.ts"></script>
+  </head>
+  <body>
+    <div
+      class="hidden content font-semibold container mx-auto xl:px-[30vw] flex-col items-center justify-center h-screen"
+    >
+      <img class="h-28 -mt-20" src="/banner.png" />
+      <form class="w-full flex flex-col gap-2">
+        <label class="block mt-4 text-neutral-300 -mb-1">Server URL</label>
+        <input
+          type="url"
+          required
+          value="http://"
+          class="block disabled:pointer-events-none disabled:opacity-80 w-full bg-[#292929] text-neutral-200 px-4 py-2 border-[0.16em] border-[#292929] focus:border-[#00a4dc] text-gray-700 rounded-md focus:outline-none focus:ring-0"
+        />
+        <div class="hidden error text-red-500"></div>
+        <button
+          class="block transition group disabled:pointer-events-none disabled:bg-neutral-800 disabled:text-neutral-400 w-full flex items-center justify-center h-11 bg-[#00a4dc] text-white px-4 py-2 mt-2 rounded-md focus:outline-none focus:ring-0"
+        >
+          <span class="group-disabled:hidden">Connect</span>
+          <span class="spinner hidden group-disabled:block"></span>
+        </button>
+      </form>
+    </div>
+    <div class="loader block">
+      <div
+        class="flex h-screen w-full text-[#00a4dc] items-center justify-center spinner text-4xl"
+      ></div>
+    </div>
+  </body>
+</html>
