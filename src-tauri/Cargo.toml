@@ -1,6 +1,6 @@
 [package]
 name = "jellytauri"
-version = "1.0.1"
+version = "1.0.0"
 description = "A Tauri App"
 authors = ["DanCodes <dan@dancodes.online"]
 edition = "2021"
