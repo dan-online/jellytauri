@@ -15,22 +15,17 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Tauri dependencies
-        run: sudo apt-get update -y && sudo apt-get install -y libwebkit2gtk-4.0-dev libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
+        run: sudo apt-get update -y && sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
 
       - name: Rust stable
         uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
 
-      - uses: actions/cache@v4
+      - name: Rust cache
+        uses: swatinem/rust-cache@v2
         with:
-          path: |
-            ~/.cargo/bin/
-            ~/.cargo/registry/index/
-            ~/.cargo/registry/cache/
-            ~/.cargo/git/db/
-            target/
-          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+          workspaces: "./src-tauri -> target"
 
       - name: Setup Node
         uses: josh-development/.github/setup-node@main
