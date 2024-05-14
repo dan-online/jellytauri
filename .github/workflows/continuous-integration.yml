@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Tauri dependencies
-        run: sudo apt-get update -y && sudo apt-get install -y libwebkit2gtk-4.0-dev libappindicator3-dev librsvg2-dev patchelf
+        run: sudo apt-get update -y && sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
 
       - name: Rust stable
         uses: actions-rs/toolchain@v1
