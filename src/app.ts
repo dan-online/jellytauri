@@ -1,6 +1,9 @@
+import Spinner from "~icons/svg-spinners/ring-resize";
+
 import { Store } from "@tauri-apps/plugin-store";
 import { invoke } from "@tauri-apps/api/core";
-import Spinner from "~icons/svg-spinners/ring-resize";
+import { type Update, check } from "@tauri-apps/plugin-updater";
+import { relaunch } from "@tauri-apps/plugin-process";
 
 import "virtual:uno.css";
 import "@unocss/reset/tailwind.css";
@@ -58,6 +61,47 @@ const clearError = () => {
 	error.classList.add("hidden");
 };
 
+const updateCheck = async () => {
+	if (!inTauri) {
+		return;
+	}
+
+	const update: Update | null = await check().catch((e) => {
+		console.error(e);
+		return null;
+	});
+
+	if (update?.available) {
+		console.log("Update available", update);
+
+		const updateEl = document.querySelector(".update")!;
+
+		updateEl.classList.remove("hidden");
+
+		const progress: HTMLDivElement = updateEl.querySelector(".progress")!;
+
+		let size = 0;
+
+		await update.downloadAndInstall((p) => {
+			switch (p.event) {
+				case "Started":
+					size = p.data.contentLength || 0;
+					break;
+				case "Progress":
+					progress.style.width = `${(p.data.chunkLength / size) * 100}%`;
+					break;
+				case "Finished":
+					progress.style.width = "100%";
+					break;
+			}
+		});
+
+		progress.style.display = "none";
+
+		await relaunch();
+	}
+};
+
 const onLoad = async () => {
 	for (const el of Array.from(document.querySelectorAll(".spinner"))) {
 		el.innerHTML = Spinner;
@@ -66,6 +110,8 @@ const onLoad = async () => {
 	if (window.location.search.includes("reset")) {
 		await setJellyfinUrl("");
 	}
+
+	await updateCheck();
 
 	const url = await getJellyfinUrl();
 

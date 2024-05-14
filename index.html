@@ -47,5 +47,27 @@
         class="flex h-screen w-full text-[#00a4dc] items-center justify-center spinner text-4xl"
       ></div>
     </div>
+    <div
+      class="update fixed top-0 left-0 h-full w-full bg-[#101010] hidden px-10"
+    >
+      <div
+        class="flex flex-col gap-2 items-center justify-center h-full container mx-auto xl:px-[30vw]"
+      >
+        <div class="flex items-center gap-4">
+          <div
+            class="text-[#00a4dc] items-center justify-center spinner text-4xl"
+          ></div>
+          <div class="text-white font-semibold text-2xl">Updating...</div>
+        </div>
+        <div
+          class="loader overflow-hidden w-full bg-neutral-800 h-1 mt-4 rounded-full"
+        >
+          <div
+            class="progress bg-[#00a4dc] h-1"
+            style="width: 0%; transition: width 0.5s"
+          ></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

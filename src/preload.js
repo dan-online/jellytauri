@@ -12,7 +12,8 @@ const i = setInterval(() => {
     button.classList.remove("hide");
     button.addEventListener("click", (e) => {
       e.preventDefault();
-      window.location.href = "http://localhost:5173/?reset";
+      // todo: check if theres a programmatic way to get this url
+      window.location.href = "http://tauri.localhost/?reset";
     });
   }
 }, 500);

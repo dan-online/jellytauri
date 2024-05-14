@@ -47,6 +47,12 @@ fn inject_script_plugin<R: Runtime>() -> TauriPlugin<R> {
 
 fn main() {
     tauri::Builder::default()
+        .setup(|app| {
+            app.handle()
+                .plugin(tauri_plugin_updater::Builder::new().build())?;
+            Ok(())
+        })
+        .plugin(tauri_plugin_process::init())
         .plugin(tauri_plugin_store::Builder::new().build())
         .plugin(inject_script_plugin())
         .invoke_handler(tauri::generate_handler![resolve_jellyfin])

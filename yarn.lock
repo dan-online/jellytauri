@@ -1067,12 +1067,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tauri-apps/plugin-process@npm:^2.0.0-beta.3":
+  version: 2.0.0-beta.3
+  resolution: "@tauri-apps/plugin-process@npm:2.0.0-beta.3"
+  dependencies:
+    "@tauri-apps/api": "npm:2.0.0-beta.11"
+  checksum: 10c0/86405aff92cad8ba2f006a3250dfac6c237cefdf40a756f6c616a6c51b0db5d0f999e26f87cefd0b58d1efcbcc419ed284cfc99fa7957f2ccc7c453dbc3b58b5
+  languageName: node
+  linkType: hard
+
 "@tauri-apps/plugin-store@npm:^2.0.0-beta.3":
   version: 2.0.0-beta.3
   resolution: "@tauri-apps/plugin-store@npm:2.0.0-beta.3"
   dependencies:
     "@tauri-apps/api": "npm:2.0.0-beta.11"
   checksum: 10c0/23c605f5db7d5a31710272981bca7775d07056da3a508c595c5bddb44605ff2cbcbd5db073a88c84f83dff1adee1a44910ec97f355c3e6b69497809423ffa20f
+  languageName: node
+  linkType: hard
+
+"@tauri-apps/plugin-updater@npm:^2.0.0-beta.3":
+  version: 2.0.0-beta.3
+  resolution: "@tauri-apps/plugin-updater@npm:2.0.0-beta.3"
+  dependencies:
+    "@tauri-apps/api": "npm:2.0.0-beta.11"
+  checksum: 10c0/7810c0f7414625d77987a16f9f610be7260f4eaed9710a77c8ecd1d21e39d4d14329f98ec0c7fa33fc10bfa08579fca7ae84db22efc97fed3fbe1381a2bbb65d
   languageName: node
   linkType: hard
 
@@ -2186,7 +2204,9 @@ __metadata:
     "@iconify/json": "npm:^2.2.210"
     "@tauri-apps/api": "npm:^2.0.0-beta.11"
     "@tauri-apps/cli": "npm:^2.0.0-beta.17"
+    "@tauri-apps/plugin-process": "npm:^2.0.0-beta.3"
     "@tauri-apps/plugin-store": "npm:^2.0.0-beta.3"
+    "@tauri-apps/plugin-updater": "npm:^2.0.0-beta.3"
     "@unocss/reset": "npm:^0.60.2"
     typescript: "npm:^5.4.5"
     unocss: "npm:^0.60.2"

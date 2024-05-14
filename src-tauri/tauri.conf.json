@@ -8,6 +8,15 @@
     "devUrl": "http://localhost:5173",
     "frontendDist": "../dist"
   },
+  "plugins": {
+    "updater": {
+      "active": true,
+      "endpoints": [
+        "https://github.com/dan-online/jellytauri/releases/download/latest/latest.json"
+      ],
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDU4M0VBQzEwODg4QzZGQUEKUldTcWI0eUlFS3crV09xVmxPVmJGVFB3d2lKRnpJN1V3eUxzYXBCYllYdDljRit5OHFiUXJDTGsK"
+    }
+  },
   "bundle": {
     "active": true,
     "targets": "all",
