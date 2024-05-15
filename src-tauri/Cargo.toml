@@ -1,6 +1,6 @@
 [package]
 name = "jellytauri"
-version = "1.0.4"
+version = "1.0.5"
 description = "JellyTauri"
 authors = ["DanCodes <dan@dancodes.online"]
 edition = "2021"
