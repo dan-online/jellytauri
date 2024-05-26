@@ -23,13 +23,13 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.7.3",
-    "@tauri-apps/api": "^2.0.0-beta.11",
-    "@tauri-apps/cli": "^2.0.0-beta.17",
+    "@tauri-apps/api": "^2.0.0-beta.12",
+    "@tauri-apps/cli": "^2.0.0-beta.18",
     "@tauri-apps/plugin-updater": "^2.0.0-beta.3",
     "concurrently": "^8.2.2",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5",
-    "unocss": "^0.60.2",
+    "unocss": "^0.60.3",
     "vite": "^5.2.11"
   },
   "packageManager": "yarn@4.2.2"
