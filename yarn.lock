@@ -852,13 +852,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/json@npm:^2.2.217":
-  version: 2.2.217
-  resolution: "@iconify/json@npm:2.2.217"
+"@iconify/json@npm:^2.2.219":
+  version: 2.2.219
+  resolution: "@iconify/json@npm:2.2.219"
   dependencies:
     "@iconify/types": "npm:*"
     pathe: "npm:^1.1.2"
-  checksum: 10c0/8c6eba0d3c506d845d12b3df7df697cb42dce4c8a449b9f518bff941cdbee61a09384f845c1a348db324cdc531ef82ee781bc313c0f01eceb128cbdd5970f6b7
+  checksum: 10c0/f16a90c7c648ed46fee1213b19e7a381b4362c701dd587af0930eb8788c13bd550d274982eff4b8ac48d1e349f317570f30d4e6e6c55fcbde866ea6a6bc7e326
   languageName: node
   linkType: hard
 
@@ -1469,10 +1469,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@unocss/reset@npm:0.60.4, @unocss/reset@npm:^0.60.4":
+"@unocss/reset@npm:0.60.4":
   version: 0.60.4
   resolution: "@unocss/reset@npm:0.60.4"
   checksum: 10c0/7d47dba7ad525a12eaf117249db68d6b4236b0eb7e0404487ce12f113bc1f656df4314480bc4deee2713f24df0ac7007f4b0ad2be1b1bb2b8b78108ad13f707f
+  languageName: node
+  linkType: hard
+
+"@unocss/reset@npm:^0.61.0":
+  version: 0.61.0
+  resolution: "@unocss/reset@npm:0.61.0"
+  checksum: 10c0/8516914be6073ccdf5844974a47a592b10909102d4e88a0b0d8413f74e458248c2aed2973e938c181de43d7abd91aa890fdf197faa774ac7fd61784608585c63
   languageName: node
   linkType: hard
 
@@ -2598,11 +2605,11 @@ __metadata:
   resolution: "jellytauri@workspace:."
   dependencies:
     "@biomejs/biome": "npm:^1.8.0"
-    "@iconify/json": "npm:^2.2.217"
+    "@iconify/json": "npm:^2.2.219"
     "@tauri-apps/api": "npm:^2.0.0-beta.13"
     "@tauri-apps/cli": "npm:^2.0.0-beta.20"
     "@tauri-apps/plugin-updater": "npm:^2.0.0-beta.5"
-    "@unocss/reset": "npm:^0.60.4"
+    "@unocss/reset": "npm:^0.61.0"
     concurrently: "npm:^8.2.2"
     tsup: "npm:^8.1.0"
     typescript: "npm:^5.4.5"
