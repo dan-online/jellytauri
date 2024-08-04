@@ -951,13 +951,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/json@npm:^2.2.231":
-  version: 2.2.231
-  resolution: "@iconify/json@npm:2.2.231"
+"@iconify/json@npm:^2.2.233":
+  version: 2.2.233
+  resolution: "@iconify/json@npm:2.2.233"
   dependencies:
     "@iconify/types": "npm:*"
     pathe: "npm:^1.1.2"
-  checksum: 10c0/1df3d1fafe93656f5ee4be1f5a21701dda33d4deabff7db8aced7cab6127af00f66e4148e11fe782643c14471912027929f6877cd9e3059840b6fa4d4adc2dd0
+  checksum: 10c0/81eba067374df2e3748e020c33d066e824230f49014ba7612f69e91b2e2fefd9b270a48d3df31ff497ff0576b7643849d5f06eb921e53b599685f7b1777ea472
   languageName: node
   linkType: hard
 
@@ -965,21 +965,6 @@ __metadata:
   version: 2.0.0
   resolution: "@iconify/types@npm:2.0.0"
   checksum: 10c0/65a3be43500c7ccacf360e136d00e1717f050b7b91da644e94370256ac66f582d59212bdb30d00788aab4fc078262e91c95b805d1808d654b72f6d2072a7e4b2
-  languageName: node
-  linkType: hard
-
-"@iconify/utils@npm:^2.1.23":
-  version: 2.1.23
-  resolution: "@iconify/utils@npm:2.1.23"
-  dependencies:
-    "@antfu/install-pkg": "npm:^0.1.1"
-    "@antfu/utils": "npm:^0.7.7"
-    "@iconify/types": "npm:^2.0.0"
-    debug: "npm:^4.3.4"
-    kolorist: "npm:^1.8.0"
-    local-pkg: "npm:^0.5.0"
-    mlly: "npm:^1.6.1"
-  checksum: 10c0/754cdfb7c6072fb65d95fac7a3eef3a99fc6a419532f79e54e06f0ec4e5810a09237f58443f40e36aa05fc2e714c5fef9cd474b0c31e9f65244801c8026880c3
   languageName: node
   linkType: hard
 
@@ -995,6 +980,21 @@ __metadata:
     local-pkg: "npm:^0.5.0"
     mlly: "npm:^1.6.1"
   checksum: 10c0/fdebb434dbd0378f7c6b7f8c969f8d2a71b068d61e47564166695d710fc24d75afdb48f2f70e68a4bf3051dacffe8624689191fe55626496a58873b4a9385c50
+  languageName: node
+  linkType: hard
+
+"@iconify/utils@npm:^2.1.29":
+  version: 2.1.29
+  resolution: "@iconify/utils@npm:2.1.29"
+  dependencies:
+    "@antfu/install-pkg": "npm:^0.1.1"
+    "@antfu/utils": "npm:^0.7.10"
+    "@iconify/types": "npm:^2.0.0"
+    debug: "npm:^4.3.5"
+    kolorist: "npm:^1.8.0"
+    local-pkg: "npm:^0.5.0"
+    mlly: "npm:^1.7.1"
+  checksum: 10c0/1a1720a66d620479fe3509b2fe8320906d81baba83fa0aa51929b759e274d8f464b665f40f46edd1571d38719ca46671fa9fc778d79953bfd54b96bd4b6cc33c
   languageName: node
   linkType: hard
 
@@ -1680,10 +1680,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@unocss/reset@npm:0.61.6, @unocss/reset@npm:^0.61.6":
+"@unocss/reset@npm:0.61.6":
   version: 0.61.6
   resolution: "@unocss/reset@npm:0.61.6"
   checksum: 10c0/a8701fab61c172246376772d59f67fa3c2456e54f884fa0a7b42c2ed148440fd2226c8cf11497774966d961185d1e546efc2d041e3a71f9d6681f6b7795decdd
+  languageName: node
+  linkType: hard
+
+"@unocss/reset@npm:^0.61.9":
+  version: 0.61.9
+  resolution: "@unocss/reset@npm:0.61.9"
+  checksum: 10c0/cb8c41281028fbfd5165643bfc5431dd4fd173ad8d8b543daea539b02f2a5ef2895da128f9235d7dee942edc8d1cb82d87488790889952cd4adbb4c4f0eddb47
   languageName: node
   linkType: hard
 
@@ -2182,6 +2189,18 @@ __metadata:
     supports-color:
       optional: true
   checksum: 10c0/082c375a2bdc4f4469c99f325ff458adad62a3fc2c482d59923c260cb08152f34e2659f72b3767db8bb2f21ca81a60a42d1019605a412132d7b9f59363a005cc
+  languageName: node
+  linkType: hard
+
+"debug@npm:^4.3.6":
+  version: 4.3.6
+  resolution: "debug@npm:4.3.6"
+  dependencies:
+    ms: "npm:2.1.2"
+  peerDependenciesMeta:
+    supports-color:
+      optional: true
+  checksum: 10c0/3293416bff072389c101697d4611c402a6bacd1900ac20c0492f61a9cdd6b3b29750fc7f5e299f8058469ef60ff8fb79b86395a30374fbd2490113c1c7112285
   languageName: node
   linkType: hard
 
@@ -2833,17 +2852,17 @@ __metadata:
   resolution: "jellytauri@workspace:."
   dependencies:
     "@biomejs/biome": "npm:^1.8.3"
-    "@iconify/json": "npm:^2.2.231"
+    "@iconify/json": "npm:^2.2.233"
     "@tauri-apps/api": "npm:^2.0.0-beta.15"
     "@tauri-apps/cli": "npm:^2.0.0-beta.22"
     "@tauri-apps/plugin-updater": "npm:^2.0.0-beta.7"
-    "@unocss/reset": "npm:^0.61.6"
+    "@unocss/reset": "npm:^0.61.9"
     concurrently: "npm:^8.2.2"
     tsup: "npm:^8.2.3"
     typescript: "npm:^5.5.4"
     unocss: "npm:^0.61.6"
     unplugin-auto-import: "npm:^0.18.2"
-    unplugin-icons: "npm:^0.19.0"
+    unplugin-icons: "npm:^0.19.1"
     vite: "npm:^5.3.5"
   languageName: unknown
   linkType: soft
@@ -4231,17 +4250,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unplugin-icons@npm:^0.19.0":
-  version: 0.19.0
-  resolution: "unplugin-icons@npm:0.19.0"
+"unplugin-icons@npm:^0.19.1":
+  version: 0.19.1
+  resolution: "unplugin-icons@npm:0.19.1"
   dependencies:
     "@antfu/install-pkg": "npm:^0.3.3"
-    "@antfu/utils": "npm:^0.7.7"
-    "@iconify/utils": "npm:^2.1.23"
-    debug: "npm:^4.3.4"
+    "@antfu/utils": "npm:^0.7.10"
+    "@iconify/utils": "npm:^2.1.29"
+    debug: "npm:^4.3.6"
     kolorist: "npm:^1.8.0"
     local-pkg: "npm:^0.5.0"
-    unplugin: "npm:^1.10.1"
+    unplugin: "npm:^1.12.0"
   peerDependencies:
     "@svgr/core": ">=7.0.0"
     "@svgx/core": ^1.0.1
@@ -4259,19 +4278,7 @@ __metadata:
       optional: true
     vue-template-es2015-compiler:
       optional: true
-  checksum: 10c0/61ceb82293c43731ecf73e017edcea752153b1791be3551d2582342f6f84ef0873db45f86892650d159120890c264c0a382616a6de6cef22ad5bf20121f58e77
-  languageName: node
-  linkType: hard
-
-"unplugin@npm:^1.10.1":
-  version: 1.10.1
-  resolution: "unplugin@npm:1.10.1"
-  dependencies:
-    acorn: "npm:^8.11.3"
-    chokidar: "npm:^3.6.0"
-    webpack-sources: "npm:^3.2.3"
-    webpack-virtual-modules: "npm:^0.6.1"
-  checksum: 10c0/6fe469785a46ff2a2d5c077db8b8b8d2c5429016f2561cffed4eb0068ea085c50b8c503891a4ea028f8226da0b9a8b878118a0b9eeded511b53adec4edbb38d3
+  checksum: 10c0/c38c099d5d978f691f5cedd6e7dab31f344f93a03451ed6a0e469ec080455598a2251ae697e0edf4eeb193ac914f284e6bce34710b74134793e9a3cbdaf1e507
   languageName: node
   linkType: hard
 
