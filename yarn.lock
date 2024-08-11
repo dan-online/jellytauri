@@ -953,13 +953,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/json@npm:^2.2.233":
-  version: 2.2.233
-  resolution: "@iconify/json@npm:2.2.233"
+"@iconify/json@npm:^2.2.235":
+  version: 2.2.235
+  resolution: "@iconify/json@npm:2.2.235"
   dependencies:
     "@iconify/types": "npm:*"
     pathe: "npm:^1.1.2"
-  checksum: 10c0/81eba067374df2e3748e020c33d066e824230f49014ba7612f69e91b2e2fefd9b270a48d3df31ff497ff0576b7643849d5f06eb921e53b599685f7b1777ea472
+  checksum: 10c0/d38e67ec948112433ead456bbc3fce5524346bc82e778a9bef045c1250b620b23d6f0a20e2550cf17e8813e9410d00382635e4acf4c9891ddeb77891ed2555b3
   languageName: node
   linkType: hard
 
@@ -2864,7 +2864,7 @@ __metadata:
   resolution: "jellytauri@workspace:."
   dependencies:
     "@biomejs/biome": "npm:^1.8.3"
-    "@iconify/json": "npm:^2.2.233"
+    "@iconify/json": "npm:^2.2.235"
     "@tauri-apps/api": "npm:^2.0.0-rc.0"
     "@tauri-apps/cli": "npm:^2.0.0-rc.1"
     "@tauri-apps/plugin-updater": "npm:^2.0.0-rc.0"
@@ -2874,7 +2874,7 @@ __metadata:
     typescript: "npm:^5.5.4"
     unocss: "npm:^0.61.9"
     unplugin-auto-import: "npm:^0.18.2"
-    unplugin-icons: "npm:^0.19.1"
+    unplugin-icons: "npm:^0.19.2"
     vite: "npm:^5.3.5"
   languageName: unknown
   linkType: soft
@@ -4303,9 +4303,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unplugin-icons@npm:^0.19.1":
-  version: 0.19.1
-  resolution: "unplugin-icons@npm:0.19.1"
+"unplugin-icons@npm:^0.19.2":
+  version: 0.19.2
+  resolution: "unplugin-icons@npm:0.19.2"
   dependencies:
     "@antfu/install-pkg": "npm:^0.3.3"
     "@antfu/utils": "npm:^0.7.10"
@@ -4331,7 +4331,7 @@ __metadata:
       optional: true
     vue-template-es2015-compiler:
       optional: true
-  checksum: 10c0/c38c099d5d978f691f5cedd6e7dab31f344f93a03451ed6a0e469ec080455598a2251ae697e0edf4eeb193ac914f284e6bce34710b74134793e9a3cbdaf1e507
+  checksum: 10c0/dfc452f18c6b6d690d236c8fe7b2e29455f23b7c552174cdc958892f74d8192a11515146b7929c72ef99ab6a6812a8cc2aaa47ce531c8a37f567371ad12b411c
   languageName: node
   linkType: hard
 
