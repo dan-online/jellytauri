@@ -25,15 +25,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@antfu/install-pkg@npm:^0.3.3":
-  version: 0.3.3
-  resolution: "@antfu/install-pkg@npm:0.3.3"
-  dependencies:
-    "@jsdevtools/ez-spawn": "npm:^3.0.4"
-  checksum: 10c0/e0b3444d5bbc6b24f93896d18d2ad48b833fe9664c977275afd947246debfc3411c7e511efcee9ff9d0d9ea1ec85b1d67dee4f8c92ddda81a3fecb08d58b16e1
-  languageName: node
-  linkType: hard
-
 "@antfu/install-pkg@npm:^0.4.0":
   version: 0.4.0
   resolution: "@antfu/install-pkg@npm:0.4.0"
@@ -41,6 +32,16 @@ __metadata:
     package-manager-detector: "npm:^0.1.1"
     tinyexec: "npm:^0.2.0"
   checksum: 10c0/0f3d84c5ed4d5f238dd5f369c08693042cb9e734c4572cb2d855e6fa7e8dfd390dd6ad5ba7f3161bda2b20b078931f8a57de883cdea5c956e6bad6cc4303aa4a
+  languageName: node
+  linkType: hard
+
+"@antfu/install-pkg@npm:^0.4.1":
+  version: 0.4.1
+  resolution: "@antfu/install-pkg@npm:0.4.1"
+  dependencies:
+    package-manager-detector: "npm:^0.2.0"
+    tinyexec: "npm:^0.3.0"
+  checksum: 10c0/af47a84e77f3f69077ec464e0a9e82791666693380fc8ed9867f388f5c0cd8421e2642b9deefc7d4adb7b8cfb9dd1a715b25f9a974d023b10779cad0885439ef
   languageName: node
   linkType: hard
 
@@ -963,13 +964,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/json@npm:^2.2.243":
-  version: 2.2.243
-  resolution: "@iconify/json@npm:2.2.243"
+"@iconify/json@npm:^2.2.245":
+  version: 2.2.245
+  resolution: "@iconify/json@npm:2.2.245"
   dependencies:
     "@iconify/types": "npm:*"
     pathe: "npm:^1.1.2"
-  checksum: 10c0/a63ccaf82833501a6014745f386354a1d3b8bb5be5c8bf76f94e3b31573682de2145a5c0035b8691db8b344f776180d28ef7b940b0fc32230ab7762699ea5d1c
+  checksum: 10c0/b7d8dff740f573d75267373b10fc2169e730f431b514067d8af592180e0c469a9fd152ea7ca5cc6e58fc35c4d4736476e3df0b7a851c5b73f28dca80d18751bd
   languageName: node
   linkType: hard
 
@@ -1070,18 +1071,6 @@ __metadata:
     "@jridgewell/resolve-uri": "npm:^3.1.0"
     "@jridgewell/sourcemap-codec": "npm:^1.4.14"
   checksum: 10c0/3d1ce6ebc69df9682a5a8896b414c6537e428a1d68b02fcc8363b04284a8ca0df04d0ee3013132252ab14f2527bc13bea6526a912ecb5658f0e39fd2860b4df4
-  languageName: node
-  linkType: hard
-
-"@jsdevtools/ez-spawn@npm:^3.0.4":
-  version: 3.0.4
-  resolution: "@jsdevtools/ez-spawn@npm:3.0.4"
-  dependencies:
-    call-me-maybe: "npm:^1.0.1"
-    cross-spawn: "npm:^7.0.3"
-    string-argv: "npm:^0.3.1"
-    type-detect: "npm:^4.0.8"
-  checksum: 10c0/fb56f99c4d09ccaeace4ebaecfa31ab1ff90517d5ca51dbd624f4b9ab489eee469504ab33a12a2bc8b5f0a35ee61e139cc087b242ad7947c61674454cb41c75e
   languageName: node
   linkType: hard
 
@@ -1981,13 +1970,6 @@ __metadata:
     tar: "npm:^6.1.11"
     unique-filename: "npm:^3.0.0"
   checksum: 10c0/dfda92840bb371fb66b88c087c61a74544363b37a265023223a99965b16a16bbb87661fe4948718d79df6e0cc04e85e62784fbcf1832b2a5e54ff4c46fbb45b7
-  languageName: node
-  linkType: hard
-
-"call-me-maybe@npm:^1.0.1":
-  version: 1.0.2
-  resolution: "call-me-maybe@npm:1.0.2"
-  checksum: 10c0/8eff5dbb61141ebb236ed71b4e9549e488bcb5451c48c11e5667d5c75b0532303788a1101e6978cafa2d0c8c1a727805599c2741e3e0982855c9f1d78cd06c9f
   languageName: node
   linkType: hard
 
@@ -2901,7 +2883,7 @@ __metadata:
   resolution: "jellytauri@workspace:."
   dependencies:
     "@biomejs/biome": "npm:^1.8.3"
-    "@iconify/json": "npm:^2.2.243"
+    "@iconify/json": "npm:^2.2.245"
     "@tauri-apps/api": "npm:^2.0.0-rc.4"
     "@tauri-apps/cli": "npm:^2.0.0-rc.9"
     "@tauri-apps/plugin-updater": "npm:^2.0.0-rc.1"
@@ -2911,7 +2893,7 @@ __metadata:
     typescript: "npm:^5.5.4"
     unocss: "npm:^0.62.3"
     unplugin-auto-import: "npm:^0.18.2"
-    unplugin-icons: "npm:^0.19.2"
+    unplugin-icons: "npm:^0.19.3"
     vite: "npm:^5.4.2"
   languageName: unknown
   linkType: soft
@@ -3431,6 +3413,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"package-manager-detector@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "package-manager-detector@npm:0.2.0"
+  checksum: 10c0/1ad699098018f9425b0f0a197537e085420ebcb7b6c49ef5a8dcff198f50d8de206f52ed10867624b7cb01bebac76396f5ac020dcff96f44154d59e6a5dcf36a
+  languageName: node
+  linkType: hard
+
 "path-exists@npm:^4.0.0":
   version: 4.0.0
   resolution: "path-exists@npm:4.0.0"
@@ -3947,13 +3936,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"string-argv@npm:^0.3.1":
-  version: 0.3.2
-  resolution: "string-argv@npm:0.3.2"
-  checksum: 10c0/75c02a83759ad1722e040b86823909d9a2fc75d15dd71ec4b537c3560746e33b5f5a07f7332d1e3f88319909f82190843aa2f0a0d8c8d591ec08e93d5b8dec82
-  languageName: node
-  linkType: hard
-
 "string-width-cjs@npm:string-width@^4.2.0, string-width@npm:^4.1.0, string-width@npm:^4.2.0, string-width@npm:^4.2.3":
   version: 4.2.3
   resolution: "string-width@npm:4.2.3"
@@ -4094,6 +4076,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tinyexec@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "tinyexec@npm:0.3.0"
+  checksum: 10c0/138a4f4241aea6b6312559508468ab275a31955e66e2f57ed206e0aaabecee622624f208c5740345f0a66e33478fd065e359ed1eb1269eb6fd4fa25d44d0ba3b
+  languageName: node
+  linkType: hard
+
 "tinyglobby@npm:^0.2.5":
   version: 0.2.5
   resolution: "tinyglobby@npm:0.2.5"
@@ -4213,13 +4202,6 @@ __metadata:
   bin:
     tsx: dist/cli.mjs
   checksum: 10c0/e344852eee3ad8727cdf00fbdcbe7a28b8a0951f645b422098ca145cfaa61179c2b3691f11b7bc1b241e0781908f2842d9f6ff0f606f364ef7297cf0871c1a6e
-  languageName: node
-  linkType: hard
-
-"type-detect@npm:^4.0.8":
-  version: 4.0.8
-  resolution: "type-detect@npm:4.0.8"
-  checksum: 10c0/8fb9a51d3f365a7de84ab7f73b653534b61b622aa6800aecdb0f1095a4a646d3f5eb295322127b6573db7982afcd40ab492d038cf825a42093a58b1e1353e0bd
   languageName: node
   linkType: hard
 
@@ -4360,11 +4342,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unplugin-icons@npm:^0.19.2":
-  version: 0.19.2
-  resolution: "unplugin-icons@npm:0.19.2"
+"unplugin-icons@npm:^0.19.3":
+  version: 0.19.3
+  resolution: "unplugin-icons@npm:0.19.3"
   dependencies:
-    "@antfu/install-pkg": "npm:^0.3.3"
+    "@antfu/install-pkg": "npm:^0.4.1"
     "@antfu/utils": "npm:^0.7.10"
     "@iconify/utils": "npm:^2.1.29"
     debug: "npm:^4.3.6"
@@ -4388,7 +4370,7 @@ __metadata:
       optional: true
     vue-template-es2015-compiler:
       optional: true
-  checksum: 10c0/dfc452f18c6b6d690d236c8fe7b2e29455f23b7c552174cdc958892f74d8192a11515146b7929c72ef99ab6a6812a8cc2aaa47ce531c8a37f567371ad12b411c
+  checksum: 10c0/a0dec74a52b2a148cd1fae9ba80c6229d6d5070cf219e023d7e1b0784d515566c29b257c2be9377604d9a5c6aeadd277cf8654d47cd91f90890014281df9d71f
   languageName: node
   linkType: hard
 
