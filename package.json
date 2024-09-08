@@ -24,13 +24,13 @@
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
     "@tauri-apps/api": "^2.0.0-rc.4",
-    "@tauri-apps/cli": "^2.0.0-rc.9",
-    "@tauri-apps/plugin-updater": "^2.0.0-rc.1",
+    "@tauri-apps/cli": "^2.0.0-rc.12",
+    "@tauri-apps/plugin-updater": "^2.0.0-rc.2",
     "concurrently": "^8.2.2",
     "tsup": "^8.2.4",
     "typescript": "^5.5.4",
     "unocss": "^0.62.3",
-    "vite": "^5.4.2"
+    "vite": "^5.4.3"
   },
   "packageManager": "yarn@4.4.1"
 }
