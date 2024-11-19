@@ -16,10 +16,10 @@
     "tauri": "tauri"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.251",
-    "@unocss/reset": "^0.62.4",
-    "unplugin-auto-import": "^0.18.3",
-    "unplugin-icons": "^0.19.3"
+    "@iconify/json": "^2.2.273",
+    "@unocss/reset": "^0.64.1",
+    "unplugin-auto-import": "^0.18.5",
+    "unplugin-icons": "^0.20.1"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.2",
