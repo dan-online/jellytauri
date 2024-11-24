@@ -28,7 +28,7 @@
     "@tauri-apps/plugin-updater": "^2.0.0",
     "concurrently": "^9.1.0",
     "tsup": "^8.3.5",
-    "typescript": "^5.6.3",
+    "typescript": "^5.7.2",
     "unocss": "^0.64.1",
     "vite": "^5.4.11"
   },
