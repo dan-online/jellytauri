@@ -640,13 +640,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/json@npm:^2.2.273":
-  version: 2.2.273
-  resolution: "@iconify/json@npm:2.2.273"
+"@iconify/json@npm:^2.2.275":
+  version: 2.2.275
+  resolution: "@iconify/json@npm:2.2.275"
   dependencies:
     "@iconify/types": "npm:*"
     pathe: "npm:^1.1.2"
-  checksum: 10c0/b1753fddf32ae9779a1522359976186c154c06ed029ec474f254bc77d50c789df81a4fd4b21d31acd3030adc9d738a9cdbac7bac1fbfe5c633ab974c4d7e2375
+  checksum: 10c0/8110f939d6fabf43f443aba17b5e1692f1f1c988cef9d74d194a5d12bba64860dd1caecf9fbfdf1a09be60334b98c911d9ad89daa4973860c4e5de866d00a690
   languageName: node
   linkType: hard
 
@@ -2532,7 +2532,7 @@ __metadata:
   resolution: "jellytauri@workspace:."
   dependencies:
     "@biomejs/biome": "npm:^1.9.4"
-    "@iconify/json": "npm:^2.2.273"
+    "@iconify/json": "npm:^2.2.275"
     "@tauri-apps/api": "npm:^2.1.1"
     "@tauri-apps/cli": "npm:^2.1.0"
     "@tauri-apps/plugin-updater": "npm:^2.0.0"
