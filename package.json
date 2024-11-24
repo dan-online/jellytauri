@@ -32,5 +32,5 @@
     "unocss": "^0.64.1",
     "vite": "^5.4.11"
   },
-  "packageManager": "yarn@4.5.1"
+  "packageManager": "yarn@4.5.2"
 }
