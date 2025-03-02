@@ -23,14 +23,14 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "@tauri-apps/api": "^2.1.1",
-    "@tauri-apps/cli": "^2.1.0",
-    "@tauri-apps/plugin-updater": "^2.3.0",
-    "concurrently": "^9.1.0",
-    "tsup": "^8.3.5",
-    "typescript": "^5.7.2",
-    "unocss": "^0.65.2",
-    "vite": "^6.0.5"
+    "@tauri-apps/api": "^2.3.0",
+    "@tauri-apps/cli": "^2.3.1",
+    "@tauri-apps/plugin-updater": "^2.5.1",
+    "concurrently": "^9.1.2",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
+    "unocss": "^0.65.4",
+    "vite": "^6.2.0"
   },
   "packageManager": "yarn@4.5.3"
 }
