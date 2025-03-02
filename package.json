@@ -16,8 +16,8 @@
     "tauri": "tauri"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.287",
-    "@unocss/reset": "^0.65.2",
+    "@iconify/json": "^2.2.311",
+    "@unocss/reset": "^0.65.4",
     "unplugin-auto-import": "^0.19.0",
     "unplugin-icons": "^0.22.0"
   },
